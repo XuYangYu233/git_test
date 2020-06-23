@@ -14,7 +14,7 @@
                 "${fileBasenameNoExtension}.exe"
             ],
             "options": {
-                "cwd": "D:\\Study\\C++_work"
+                "cwd": "${fileDirname}"
             },
             "problemMatcher": [
                 "$gcc"
