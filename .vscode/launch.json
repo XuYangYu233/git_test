@@ -1,29 +1,38 @@
 {
   "version": "0.2.0",
   "configurations": [
+
     {
       "name": "(Windows) msvc",
       "type": "cppvsdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
+      "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "${workspaceFolder}",
+      "cwd": "${fileDirname}",
       "environment": [],
       "externalConsole": true,
       "preLaunchTask": "msvc build test"
     },
-
+/*VSCODE 预设路径变量：
+${workspaceRoot} the path of the folder opened in VS Code(VSCode中打开文件夹的路径)
+${workspaceRootFolderName} the name of the folder opened in VS Code without any solidus (/)(VSCode中打开文件夹的路径, 但不包含"/")
+${file} the current opened file(当前打开的文件)
+${relativeFile} the current opened file relative to workspaceRoot(当前打开的文件,相对于workspaceRoot)
+${fileBasename} the current opened file's basename(当前打开文件的文件名, 不含扩展名)
+${fileDirname} the current opened file's dirname(当前打开文件的目录名)
+${fileExtname} the current opened file's extension(当前打开文件的扩展名)
+${cwd} the task runner's current working directory on startup()*/
     {
       "name": "C++ (gdb) Launch",
       "preLaunchTask": "g++",
       "type": "cppdbg",
       "request": "launch",
       "targetArchitecture": "x86_64",
-      "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
+      "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "${workspaceFolder}",
+      "cwd": "${fileDirname}",
       "environment": [],
       "externalConsole": true,
       "MIMode": "gdb",
