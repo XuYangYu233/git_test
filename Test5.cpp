@@ -8,7 +8,14 @@ int main(){
     b = 3;
     i = a/b;
     //printf("%f",i);
-    cout << 1 / 2;
+    //cout << 1 / 2;
+    char *arr;
+    arr = (char *)malloc(a*sizeof(char));
+    arr[0] = 'a';
+    arr[1] = 'b';
+    arr[2] = '\0';
+    printf("%s", arr);
+    free(arr);
 
     return 0;
 }
