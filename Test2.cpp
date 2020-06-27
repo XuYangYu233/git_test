@@ -7,7 +7,7 @@
 //int b = 3;aaaa?????³É¹¦ÁËÂğaaa
 int main(){
     printf("%d\n",fun(10));
-    Sleep(1777.776);
+    Sleep(1777.9999);
     system("pause");
     return 0;
     
