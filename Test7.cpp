@@ -3,8 +3,13 @@
 using namespace std;
 int main(){
     int a,b,c,d,e,f,g;
-    scanf("%d%d%d%d",&a,&b,&c,&d);
-    if(a>b){
+    char stra[100],strb[100]="No";
+    scanf("%s", stra);
+    if (!strcmp(stra, "VISIT")) {
+        scanf("%s", strb);
+    }
+    printf("%s!!!%s", stra, strb);
+    /*if(a>b){
         e = b;
     }
     else{
@@ -16,7 +21,7 @@ int main(){
     else{
         f = d;
     }
-    g = f + e;
-    printf("%d",g);
+    g = f + e;*/
+    //printf("%d",g);
     return 0;
 }

@@ -18,7 +18,7 @@ void DFS(AdjGraph *G, int v){
     }
 }
 
-void BFS(AdjGraph *G, int v){
+void BFS(AdjGraph *G, int u){
     int w, i;
     ArcNode *p;
     SqQueue *qu;
@@ -27,9 +27,9 @@ void BFS(AdjGraph *G, int v){
     for(i=0;i<G->n;i++){
         visited[i] = 0;
     }*/
-    printf("%2d", v);
-    visited[v] = 1;
-    enQueue(qu, v);
+    printf("%2d", u);
+    visited[u] = 1;
+    enQueue(qu, u);
     while(!QueueEmpty(qu)){
         deQueue(qu, w);
         p = G->adjlist[w].firstarc;

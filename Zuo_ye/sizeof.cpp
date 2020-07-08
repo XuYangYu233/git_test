@@ -6,6 +6,7 @@ int main(){
 	arr[0] = 1;
 	printf("size of int is %lld\n",sizeof(int));
 	printf("size of long is %lld\n",sizeof(long int));
+	printf("size of long is %lld\n",sizeof(long long));
 	printf("size of short is %lld\n",sizeof(short));
 	printf("size of char is %lld\n",sizeof(char));
 	printf("size of float is %lld\n",sizeof(float));

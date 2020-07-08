@@ -72,34 +72,23 @@
                 "$msCompile"
             ],
             "presentation": {
-                "reveal":"always"
+                "reveal": "always"
             },
             "group": {
-                "kind":"test",
+                "kind": "test",
                 "isDefault": true
             }
         },
         {
-            "type": "shell",
-            "label": "msvc build",
-            "command": "cl.exe",
-            "args": [
-                "/Zi",
-                "/EHsc",
-                "/Fe:",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "${file}"
-            ],
-            "problemMatcher": [
-                "$msCompile"
-            ],
-            "presentation": {
-                "reveal":"always"
+            "label": "Makefile build",
+            "command": "make",
+            "options": {
+                "cwd": "${fileDirname}"
             },
-            "group": {
-                "kind":"build",
-                "isDefault": true
-            }
+            "type": "shell",
+            "problemMatcher": [
+                "$gcc"
+            ],
         }
     ]
 }
